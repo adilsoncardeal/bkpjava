@@ -4,15 +4,18 @@ public class Uri1073{
         Scanner teclado = new Scanner(System.in);
 
         int N;
+        int quadrado = 0;
         //int valor;
         N = teclado.nextInt();
-        if ( 5 < N  && N < 2000){
 
-        }
-
-        for (int valor = 1; valor < 5; valor = valor+2){
-            N = N ^ 2;
-            System.out.println(N);
+       
+        for (int contador = 1; contador <= N; contador = contador+1){
+            
+            if (contador % 2 == 0){
+                quadrado = contador * contador;
+                System.out.println(contador+ "^2 = "+quadrado);
+            }
+                        
         }
 
 
